@@ -1,12 +1,15 @@
 package com.tutorialspoint;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+//import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
 	
-	static Logger log = Logger.getLogger(MainApp.class.getName());
+	//static Logger log = Logger.getLogger(MainApp.class.getName());
+	static Log log = LogFactory.getLog(MainApp.class.getName());
 
 	public static void main(String[] args) {
 		
